@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- initial-scale=1.0 設定畫面的初始縮放比例為100% -->
@@ -12,6 +11,10 @@
 
         body {
             margin: 0px;
+        }
+
+        img{
+            max-width: 100%;
         }
 
         .row::after {
@@ -28,9 +31,10 @@
         }
 
         .header {
-            background-color: orange;
-            color: white;
-            padding: 15px;
+            background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+            color: wheat;
+            padding: 5px;
+            height: 70px;
         }
 
         .menu ul {
@@ -47,8 +51,34 @@
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         }
 
-        .menu li:hover {
-            background-color: #0099cc;
+        .li-40{
+            
+        }
+        .li-50{
+            
+        }
+        .li-60{
+            
+        }
+        .li-70{
+            
+        }
+         .menu li .li-40:hover {
+            /* background-color: #0099cc; */
+            background-image:linear-gradient(to right,#13547a 40%, #DFE9F2 0%);
+        }
+
+        .menu li .li-50:hover {
+            /* background-color: #0099cc; */
+            background-image:linear-gradient(to right,#13547a 50%, #DFE9F2 0%);
+        }
+
+        .menu li .li-60:hover {
+            background-image:linear-gradient(to right,#13547a 60%, #DFE9F2 0%);
+        }
+
+        .menu li .li-70:hover {
+            background-image:linear-gradient(to right,#13547a 70%, #DFE9F2 0%);
         }
 
         .footer {
@@ -168,18 +198,20 @@
 
 <body>
     <div class="header">
-        <h1>我的範例</h1>
+        <h4>Hello 我是77</h1>
     </div>
 
     <div class="row">
         <!--row start-->
         <div class="col-3 col-s-3 menu">
-            <p>前程四緊：</p>
+            <p>技能：</p>
             <ul>
-                <li>手頭緊</li>
-                <li>眉頭緊</li>
-                <li>衣服緊</li>
-                <li>時間緊</li>
+                <li class="li-70">C# 70%</li>
+                <li class="li-50">python 50%</li>
+                <li class="li-60">java 60%</li>
+                <li class="li-60">html/css 60%</li>
+                <li class="li-50">js 基本 50$</li>
+                <li class="li-70">sql 70%</li>
             </ul>
         </div>
 
