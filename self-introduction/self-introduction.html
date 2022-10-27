@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- initial-scale=1.0 設定畫面的初始縮放比例為100% -->
@@ -11,9 +12,10 @@
 
         body {
             margin: 0px;
+            background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
         }
 
-        img{
+        img {
             max-width: 100%;
         }
 
@@ -51,40 +53,28 @@
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         }
 
-        .li-40{
-            
-        }
-        .li-50{
-            
-        }
-        .li-60{
-            
-        }
-        .li-70{
-            
-        }
-         .menu li .li-40:hover {
+
+        .menu .li-40:hover {
             /* background-color: #0099cc; */
-            background-image:linear-gradient(to right,#13547a 40%, #DFE9F2 0%);
+            background-image: linear-gradient(to right, #13547a 40%, #DFE9F2 0%);
         }
 
-        .menu li .li-50:hover {
+        .menu .li-50:hover {
             /* background-color: #0099cc; */
-            background-image:linear-gradient(to right,#13547a 50%, #DFE9F2 0%);
+            background-image: linear-gradient(to right, #13547a 50%, #DFE9F2 0%);
         }
 
-        .menu li .li-60:hover {
-            background-image:linear-gradient(to right,#13547a 60%, #DFE9F2 0%);
+        .menu .li-60:hover {
+            background-image: linear-gradient(to right, #13547a 60%, #DFE9F2 0%);
         }
 
-        .menu li .li-70:hover {
-            background-image:linear-gradient(to right,#13547a 70%, #DFE9F2 0%);
+        .menu .li-70:hover {
+            background-image: linear-gradient(to right, #13547a 70%, #DFE9F2 0%);
         }
 
         .footer {
-            background-color: green;
             color: white;
-            text-align: center;
+            display: flex;
             font-size: 16px;
             padding: 5px;
         }
@@ -208,7 +198,7 @@
             <ul>
                 <li class="li-70">C# 70%</li>
                 <li class="li-50">python 50%</li>
-                <li class="li-60">java 60%</li>
+                <li class="li-40">java 40%</li>
                 <li class="li-60">html/css 60%</li>
                 <li class="li-50">js 基本 50$</li>
                 <li class="li-70">sql 70%</li>
@@ -216,10 +206,10 @@
         </div>
 
         <div class="col-5 col-s-9">
-            <h1>爆笑經典名句</h1>
-            <p>壓力始終來自於新台幣。</p>
-            <p>問君能有幾副肝，恰似一串鞭炮爆不完。</p>
-            <p>青春就像衛生紙。看著挺多的，用著用著就不夠了。</p>
+            <h1>關於我</h1>
+            <p>希望可以成為一個"像樣的"工程師</p>
+            <p>喜歡戶外運動</p>
+            <p>期待自己還有創造的可能</p>
         </div>
 
         <div class="col-4 col-s-12 aside">
@@ -227,9 +217,13 @@
         </div>
     </div>
     <!--row end-->
-
     <div class="footer">
-        <p>我是footer</p>
+        <div>
+            <img src="./img/muscle.png" width:100%;">
+        </div>
+        <div>
+            <img src="./img/waiting.png" width:100%;">
+        </div>
     </div>
 
 </html>
